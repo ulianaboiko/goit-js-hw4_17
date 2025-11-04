@@ -1,0 +1,45 @@
+.photo__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  margin: 0;
+}
+
+.photo__item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.photo__img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.load-btn {
+  display: flex;
+  justify-self: center;
+  background: #480891;
+  color: rgb(236, 236, 236);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 20px 0;
+  border-radius: 8px;
+
+  transition: background-color, color, transform 0.5s ease;
+  &:hover {
+    background-color: #340569;
+    color: rgb(252, 222, 186);
+    transform: scale(1.05);
+  }
+}
